@@ -140,7 +140,6 @@ def LabelSmoothLoss(input, target):
     loss = (-target * log_prob).sum(dim=-1).mean()
     return loss
 
-# GEOMETRIC TEMPERATURE SCALING IMPLEMENTATION
 def geometric_temperature_scaling(logits, temperature):
     """Apply geometric temperature scaling to logits"""
     scaled_logits = logits / temperature
@@ -356,3 +355,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
