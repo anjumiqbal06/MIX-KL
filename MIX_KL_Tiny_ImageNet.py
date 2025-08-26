@@ -30,7 +30,7 @@ upper_limit = (1.0 - mean_tensor) / std_tensor
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--batch-size', default=64, type=int)
-    parser.add_argument('--data-dir', default='E:/MIX-KL/FGSM-LAW-main/data/tiny-imagenet-200', type=str)
+    parser.add_argument('--data-dir', default='E:/MIX-KL/data/tiny-imagenet-200', type=str)
     parser.add_argument('--epochs', default=110, type=int)
     parser.add_argument('--lr-schedule', default='multistep', choices=['cyclic', 'multistep'])
     parser.add_argument('--lr-min', default=0., type=float)
@@ -363,3 +363,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
